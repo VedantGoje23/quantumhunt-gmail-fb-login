@@ -454,6 +454,8 @@
 <!--		google sign in-->
 		<script type="text/javascript" >
 			function onSignIn(googleUser) {
+  			  alert("signed in");
+
 			  var profile = googleUser.getBasicProfile();
 			  $("#signin_name").text(profile.getName());
 			  $("#signin_email").text(profile.getEmail());
