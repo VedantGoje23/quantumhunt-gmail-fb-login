@@ -307,8 +307,16 @@
 		  <p style="font-weight:bold" class="text-light">Sign in by your Google Account</p>
 		  <div class="d-flex justify-content-center">
 <!-- 			  <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
-			  <lable class="col-10 bg-light" for="googleClick">click</lable>
-			  <button id="googleClick" class="col-12 " style="display:none;" data-onsuccess="onSignIn"></button>
+			  <div class="row">
+  <div class="col-md-3">
+    <a class="btn btn-outline-dark g-signin2" data-onsuccess="onSignIn" role="button" style="text-transform:none">
+      <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+      Login with Google
+    </a>
+  </div>
+</div>
+
+			  <button id="googleClick" class="col-12 " data-onsuccess="onSignIn"></button>
 		  </div>
 		  
 		  <hr style="width: 80%; text-align: center; color: gray; height: 3px; margin-left: 10%;">
