@@ -455,8 +455,8 @@
 <!--		google sign in-->
 		<script type="text/javascript" >
 			function onSignIn(googleUser) {
+			$('#modalLaunch').modal('hide');
   			  alert("signed in");
-			  $('#modalLaunch').modal('hide');
 			  document.getElementByClassName("userBlock").style.display="block";
 			  var profile = googleUser.getBasicProfile();
 			  $("#signin_name").text(profile.getName());
