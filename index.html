@@ -313,8 +313,12 @@
 		  
 		  <p style="font-weight:bold" class="text-light">Sign in by your Facebook Account</p>
 		  <div class="d-flex justify-content-center">
-			  <button class=" google_btn col-8 bg-light"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1dbqIl1XKQRPD1x_E3KKpIUs0p705PYPmA&usqp=CAU" style="height: 100%;" class="text-start pt-1 pb-1"> <i class="text-end"> FB Account</i></button>
-		  </div>
+		      						  <!-- The JS SDK Login Button -->
+
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+	          </div>
 		  
       </div>
     </div>
