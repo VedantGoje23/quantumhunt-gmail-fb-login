@@ -223,6 +223,7 @@
 				}
 				
 			}
+			
 		</script>
 	</head>
 	<body>
@@ -456,6 +457,7 @@
 			function onSignIn(googleUser) {
   			  alert("signed in");
 			document.getElementByClassName("modal").style.display="none";
+				document.getElementByClassName("btn-close").click();
 				document.getElementByClassName("userBlock").style.display="block";
 			  var profile = googleUser.getBasicProfile();
 			  $("#signin_name").text(profile.getName());
