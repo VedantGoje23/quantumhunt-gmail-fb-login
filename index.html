@@ -456,9 +456,9 @@
 		<script type="text/javascript" >
 			function onSignIn(googleUser) {
   			  alert("signed in");
-			document.getElementByClassName("modal").style.display="none";
-				document.getElementByClassName("btn-close").click();
-				document.getElementByClassName("userBlock").style.display="block";
+			  document.getElementByClassName("modal").style.display="none";
+			  $('#modalLaunch').modal('hide');
+			  document.getElementByClassName("userBlock").style.display="block";
 			  var profile = googleUser.getBasicProfile();
 			  $("#signin_name").text(profile.getName());
 			  $("#signin_email").text(profile.getEmail());
