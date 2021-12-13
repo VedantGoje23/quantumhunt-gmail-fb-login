@@ -384,8 +384,8 @@
 	<div class="userBlocks text-center blocker col-8 mt-3 mb-3" style="border: 2px solid white; background-color: rgba(1,1,1,0.9); border-radius: 2%;">
 		<h3 class="userHeading text-center mt-3 text-light">You are Signed in Successfully</h3>
 		<img style="width:150px; height:150px; border:2px solid white; border-radius: 100px;" class="mt-5" id="signin_img">
-		<h3 id="sigin_name" class="text-light mt-5 mb-3"></h3>
-		<h4 id="sigin_email" class="text-light mt-5 mb-3"></h4>
+		<h3 id="signin_name" class="text-light mt-5 mb-3"></h3>
+		<h4 id="signin_email" class="text-light mt-5 mb-3"></h4>
 <br>
 		<p class="text-light">----Sign out----</p>
 		<button class="signOutbtn" onclick="signOut()">Sign out</button>
@@ -469,6 +469,7 @@
 			  $(".userBlock").css("display","none");
 				var auth2 = gapi.auth2.getAuthInstance();
 				auth2.signOut().then(function () {
+				$('.userBlocks').css('display', 'none');
 				  alert("You have been signed out successfully");
 				});
   }
