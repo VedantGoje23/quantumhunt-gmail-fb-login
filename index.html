@@ -455,13 +455,13 @@
 		<script type="text/javascript" >
 			function onSignIn(googleUser) {
   			  alert("signed in");
-			document.getElementById("modalLaunch").style.display="none";
-
+			document.getElementByClassName("modal").style.display="none";
+				document.getElementByClassName("userBlock").style.display="block";
 			  var profile = googleUser.getBasicProfile();
 			  $("#signin_name").text(profile.getName());
 			  $("#signin_email").text(profile.getEmail());
 			  $("#signin_img").attr('src',profile.getImageUrl());
-			  $(".userBlock").css("display","block");
+			  
 }
 			function signOut() {
 			  $(".userBlock").css("display","none");
